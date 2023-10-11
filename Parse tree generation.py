@@ -1,15 +1,19 @@
-import spacy
+#part Of Speech
+import nltk
 
-# Load the English language model
-nlp = spacy.load("en")
+# Download NLTK data
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 
 # Get user input
 user_input = input("Enter a sentence: ")
 
-# Process the input using spaCy
-doc = nlp(user_input)
+# Tokenize the input sentence
+words = nltk.word_tokenize(user_input)
 
-# Generate the parse tree
-for token in doc:
-    print(f"{token.text} ({token.dep_} -> {token.head.text})")
-  
+# Use NLTK's part-of-speech tagging
+pos_tags = nltk.pos_tag(words)
+
+print("Parts of Speech:")
+for word, pos in pos_tags:
+    print(f"{word}: {pos}")
