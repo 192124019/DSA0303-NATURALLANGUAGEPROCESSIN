@@ -1,4 +1,4 @@
-#18Write program demonstrates how to access WordNet, a lexical database, to retrieve synsets and explore word meanings in python.
+#17Write program demonstrates how to access WordNet, a lexical database, to retrieve synsets and explore word meanings in python.
 import nltk
 from nltk.corpus import wordnet
 
