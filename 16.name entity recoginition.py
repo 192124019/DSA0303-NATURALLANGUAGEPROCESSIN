@@ -1,4 +1,4 @@
-#17Implement a Python program using the SpaCy library to perform Named Entity Recognition (NER) on a given text.
+#16Implement a Python program using the SpaCy library to perform Named Entity Recognition (NER) on a given text.
 import spacy
 
 def named_entity_recognition(text):
